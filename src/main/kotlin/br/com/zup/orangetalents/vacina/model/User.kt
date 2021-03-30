@@ -1,0 +1,29 @@
+package br.com.zup.orangetalents.vacina.model
+
+import org.hibernate.validator.constraints.br.CPF
+import java.time.LocalDate
+import javax.persistence.*
+import javax.validation.constraints.NotNull
+
+@Entity
+data class User(
+        @Id
+        @field:GeneratedValue(strategy = GenerationType.IDENTITY)
+        val id: Long,
+
+        @field:NotNull
+        val nome: String,
+
+        @field:NotNull
+        @field:Column(unique = true)
+        val email: String,
+
+        @field:NotNull
+        @field:Column(unique = true)
+        @field:CPF
+        val cpf: String,
+
+        @field:NotNull
+        val dataNascimento: LocalDate
+)
+
