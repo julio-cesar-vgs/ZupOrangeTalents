@@ -1,12 +1,13 @@
 package br.com.zup.orangetalents.vacina.model
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.hibernate.validator.constraints.br.CPF
 import java.time.LocalDate
 import javax.persistence.*
 import javax.validation.constraints.NotNull
 
 @Entity
-data class User(
+data class Usuario(
         @Id
         @field:GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
@@ -24,6 +25,6 @@ data class User(
         val cpf: String,
 
         @field:NotNull
-        val dataNascimento: LocalDate
+        val dataNascimento: LocalDate,
 )
 

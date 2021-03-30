@@ -1,7 +1,7 @@
 package br.com.zup.orangetalents.vacina.repository
 
-import br.com.zup.orangetalents.vacina.model.User
+import br.com.zup.orangetalents.vacina.model.Usuario
 import org.springframework.data.repository.CrudRepository
 
 
-interface ClienteRepository : CrudRepository<User, Long>
+interface ClienteRepository : CrudRepository<Usuario, Long>
