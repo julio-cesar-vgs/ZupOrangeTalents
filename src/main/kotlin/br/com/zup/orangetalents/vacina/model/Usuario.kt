@@ -1,6 +1,5 @@
 package br.com.zup.orangetalents.vacina.model
 
-import com.fasterxml.jackson.annotation.JsonIgnore
 import org.hibernate.validator.constraints.br.CPF
 import java.time.LocalDate
 import javax.persistence.*
@@ -13,18 +12,18 @@ data class Usuario(
         val id: Long,
 
         @field:NotNull
-        val nome: String,
+        val nome: String = "",
 
         @field:NotNull
         @field:Column(unique = true)
-        val email: String,
+        val email: String = "",
 
         @field:NotNull
         @field:Column(unique = true)
         @field:CPF
-        val cpf: String,
+        val cpf: String = "",
 
         @field:NotNull
-        val dataNascimento: LocalDate,
+        val dataNascimento: LocalDate = LocalDate.now(),
 )
 

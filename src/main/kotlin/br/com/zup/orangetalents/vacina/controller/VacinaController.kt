@@ -13,11 +13,11 @@ import javax.validation.Valid
 @RestController("/")
 class VacinaController(val usuarioService: IService<Usuario>, val vacinaRepository: VacinaRepository) {
 
-    @GetMapping
+    @GetMapping("/usuario")
     fun get() = usuarioService.get()
 
     @PostMapping("/usuario")
-    fun post(@RequestBody usuario: Usuario): Usuario {
+    fun post(@RequestBody @Valid usuario: Usuario): Usuario {
         val post = usuarioService.post(usuario)
         return post
     }
