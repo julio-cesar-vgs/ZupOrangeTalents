@@ -11,8 +11,8 @@ data class Vacina(
         @field:GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long,
 
-
         @ManyToOne
+        @JoinColumn(name = "usuario_id")
         val usuario: Usuario,
 
         @field:NotNull
