@@ -1,6 +1,6 @@
-package br.com.zup.orangetalents.vacina.model
+package br.com.zup.orangetalents.vacina.data.entities
 
-import com.fasterxml.jackson.annotation.JsonIgnore
+import br.com.zup.orangetalents.vacina.data.entities.Usuario
 import java.time.LocalDate
 import javax.persistence.*
 import javax.validation.constraints.NotNull

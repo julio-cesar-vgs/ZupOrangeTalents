@@ -1,4 +1,4 @@
-package br.com.zup.orangetalents.vacina.model
+package br.com.zup.orangetalents.vacina.data.entities
 
 import org.hibernate.validator.constraints.br.CPF
 import java.time.LocalDate
@@ -26,4 +26,5 @@ data class Usuario(
         @field:NotNull
         val dataNascimento: LocalDate = LocalDate.now(),
 )
+
 

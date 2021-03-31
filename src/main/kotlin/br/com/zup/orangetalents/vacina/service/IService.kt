@@ -6,5 +6,4 @@ interface IService<T> {
     fun post(t: T) : T
     fun put()
     fun delete()
-
 }
