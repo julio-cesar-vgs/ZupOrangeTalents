@@ -1,9 +1,11 @@
 package br.com.zup.orangetalents.vacina.data.mappers
 
-import br.com.zup.orangetalents.vacina.domain.models.UsuarioDomain
 import br.com.zup.orangetalents.vacina.data.entities.Usuario
-import br.com.zup.orangetalents.vacina.request.UsuarioRequest
+import br.com.zup.orangetalents.vacina.domain.models.UsuarioDto
+import br.com.zup.orangetalents.vacina.message.request.UsuarioPostRequest
 
-fun UsuarioDomain.toEntity() = Usuario(id, nome, cpf, email, dataNascimento)
-fun Usuario.toDomain() = UsuarioDomain(id, nome, cpf, email, dataNascimento)
-fun UsuarioRequest.toDomain() = UsuarioDomain(nome, cpf, email, dataNascimento)
+
+fun UsuarioDto.toEntity() = Usuario(id, nome, cpf, email, dataNascimento)
+fun Usuario.toDto() = UsuarioDto(id, nome, cpf, email, dataNascimento)
+fun UsuarioPostRequest.toDto() = UsuarioDto(nome, cpf, email, dataNascimento)
+

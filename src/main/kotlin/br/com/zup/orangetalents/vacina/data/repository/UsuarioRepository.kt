@@ -4,4 +4,4 @@ import br.com.zup.orangetalents.vacina.data.entities.Usuario
 import org.springframework.data.repository.CrudRepository
 
 
-interface ClienteRepository : CrudRepository<Usuario, Long>
+interface UsuarioRepository : CrudRepository<Usuario, Long>

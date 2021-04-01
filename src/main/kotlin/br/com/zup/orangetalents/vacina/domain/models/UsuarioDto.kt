@@ -2,7 +2,7 @@ package br.com.zup.orangetalents.vacina.domain.models
 
 import java.time.LocalDate
 
-data class UsuarioDomain(
+data class UsuarioDto(
         val id: Long,
         val nome: String,
         val cpf: String,

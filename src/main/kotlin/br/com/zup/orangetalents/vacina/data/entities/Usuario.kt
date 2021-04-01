@@ -12,16 +12,16 @@ data class Usuario(
         val id: Long,
 
         @field:NotNull
-        val nome: String = "",
+        val nome: String,
 
         @field:NotNull
         @field:Column(unique = true)
-        val email: String = "",
+        val email: String,
 
         @field:NotNull
         @field:Column(unique = true)
         @field:CPF
-        val cpf: String = "",
+        val cpf: String,
 
         @field:NotNull
         val dataNascimento: LocalDate = LocalDate.now(),
