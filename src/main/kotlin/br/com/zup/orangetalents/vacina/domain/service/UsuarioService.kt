@@ -11,24 +11,13 @@ import org.springframework.stereotype.Service
 class UsuarioService(
         val usuarioRepository: UsuarioRepository
 ) : IServiceGenerics<UsuarioDto> {
+
     override fun get() =
             usuarioRepository.findAll().map { it.toDto() }
 
-    override fun get(id: Long): UsuarioDto {
-        TODO("Not yet implemented")
-    }
+    override fun post(t: UsuarioDto) =
+         usuarioRepository.save(t.toEntity()).toDto()
 
-    override fun put() {
-        TODO("Not yet implemented")
-    }
-
-    override fun delete() {
-        TODO("Not yet implemented")
-    }
-
-    override fun post(t: UsuarioDto): UsuarioDto {
-        usuarioRepository.findById(t.id)
-        return usuarioRepository.save(t.toEntity()).toDto()
-
-    }
+    override fun getById(id: Long) =
+            usuarioRepository.findById(id).map { it.toDto() }
 }
