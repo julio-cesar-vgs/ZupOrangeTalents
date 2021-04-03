@@ -1,6 +1,6 @@
-package br.com.zup.orangetalents.vacina.domain.models
+package br.com.zup.orangetalents.vacina.dtos
 
-import br.com.zup.orangetalents.vacina.data.entities.Usuario
+import br.com.zup.orangetalents.vacina.entities.Usuario
 import java.time.LocalDate
 
 data class VacinaDto(

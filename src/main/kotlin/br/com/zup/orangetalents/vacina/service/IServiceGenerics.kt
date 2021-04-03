@@ -1,6 +1,5 @@
-package br.com.zup.orangetalents.vacina.contract.service
+package br.com.zup.orangetalents.vacina.service
 
-import br.com.zup.orangetalents.vacina.domain.models.UsuarioDto
 import java.util.*
 
 interface IServiceGenerics<T> {

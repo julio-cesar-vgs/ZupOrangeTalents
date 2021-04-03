@@ -1,8 +1,9 @@
-package br.com.zup.orangetalents.vacina.data.entities
+package br.com.zup.orangetalents.vacina.entities
 
 import org.hibernate.validator.constraints.br.CPF
 import java.time.LocalDate
 import javax.persistence.*
+import javax.validation.constraints.Email
 import javax.validation.constraints.NotNull
 
 @Entity
@@ -12,16 +13,17 @@ data class Usuario(
         val id: Long,
 
         @field:NotNull
-        val nome: String,
+        var nome: String = "",
 
         @field:NotNull
         @field:Column(unique = true)
         @field:CPF
-        val cpf: String,
+        val cpf: String = "",
 
         @field:NotNull
         @field:Column(unique = true)
-        val email: String,
+        @field:Email
+        val email: String = "",
 
         @field:NotNull
         val dataNascimento: LocalDate = LocalDate.now(),

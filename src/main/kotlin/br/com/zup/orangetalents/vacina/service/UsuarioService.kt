@@ -1,10 +1,9 @@
-package br.com.zup.orangetalents.vacina.domain.service
+package br.com.zup.orangetalents.vacina.service
 
-import br.com.zup.orangetalents.vacina.contract.service.IServiceGenerics
-import br.com.zup.orangetalents.vacina.data.mappers.toDto
-import br.com.zup.orangetalents.vacina.data.mappers.toEntity
-import br.com.zup.orangetalents.vacina.data.repository.UsuarioRepository
-import br.com.zup.orangetalents.vacina.domain.models.UsuarioDto
+import br.com.zup.orangetalents.vacina.repository.UsuarioRepository
+import br.com.zup.orangetalents.vacina.dtos.UsuarioDto
+import br.com.zup.orangetalents.vacina.mappers.toDto
+import br.com.zup.orangetalents.vacina.mappers.toEntity
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
 import org.springframework.web.server.ResponseStatusException

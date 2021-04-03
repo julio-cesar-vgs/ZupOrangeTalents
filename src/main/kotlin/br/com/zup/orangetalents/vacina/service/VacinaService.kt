@@ -1,12 +1,12 @@
-package br.com.zup.orangetalents.vacina.domain.service
+package br.com.zup.orangetalents.vacina.service
 
-import br.com.zup.orangetalents.vacina.contract.service.IServiceGenerics
-import br.com.zup.orangetalents.vacina.data.mappers.toDto
-import br.com.zup.orangetalents.vacina.data.mappers.toEntity
-import br.com.zup.orangetalents.vacina.data.repository.VacinaRepository
-import br.com.zup.orangetalents.vacina.domain.models.VacinaDto
+import br.com.zup.orangetalents.vacina.dtos.VacinaDto
+import br.com.zup.orangetalents.vacina.mappers.toDto
+import br.com.zup.orangetalents.vacina.mappers.toEntity
+import br.com.zup.orangetalents.vacina.repository.VacinaRepository
 import org.springframework.stereotype.Service
 import java.util.*
+
 @Service
 class VacinaService(val vacinaRepository: VacinaRepository) : IServiceGenerics<VacinaDto> {
     override fun get() =

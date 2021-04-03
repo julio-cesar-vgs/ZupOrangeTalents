@@ -1,4 +1,4 @@
-package br.com.zup.orangetalents.vacina.domain.models
+package br.com.zup.orangetalents.vacina.dtos
 
 import java.time.LocalDate
 

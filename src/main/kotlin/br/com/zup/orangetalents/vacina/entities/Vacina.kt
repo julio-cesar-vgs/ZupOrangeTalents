@@ -1,6 +1,5 @@
-package br.com.zup.orangetalents.vacina.data.entities
+package br.com.zup.orangetalents.vacina.entities
 
-import br.com.zup.orangetalents.vacina.data.entities.Usuario
 import java.time.LocalDate
 import javax.persistence.*
 import javax.validation.constraints.NotNull

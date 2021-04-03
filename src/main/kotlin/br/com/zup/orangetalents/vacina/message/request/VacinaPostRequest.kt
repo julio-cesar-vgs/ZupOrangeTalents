@@ -1,6 +1,6 @@
 package br.com.zup.orangetalents.vacina.message.request
 
-import br.com.zup.orangetalents.vacina.data.entities.Usuario
+import br.com.zup.orangetalents.vacina.entities.Usuario
 import java.time.LocalDate
 
 class VacinaPostRequest(
